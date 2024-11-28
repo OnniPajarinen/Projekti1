@@ -1,47 +1,15 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Script/index.css">
+  <title>Document</title>
 </head>
-<body onload="pelottava">
-
-    <h1>ToDo-lista</h1>
-
-    <table id="data" class="display">
-        <thead>
-          <tr>
-            <th>Asia
-
-            </th>
-            <th>Päivämäärä
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
-<div id="sessionData">
-</div>
-    <form id="formi">
-       
-        <br>
-        Asia:
-        <input type="text" name="textfield2" id="asia">
-        <br>
-        Päivämäärä: 
-        <input type="text" name="textfield3" id="paiva">
-        <br>
-        <br>
-        <input type="button" onclick="insertRows()" name="Insert" id="Insert" value="Insert">
-        <input type="button" onclick="deleteRows()" name="Delete" id="Delete" value="Delete">
-        <input type="button" onclick="markDone()" name="Done" id="Done" value="Done">
-        
-    </form>
-
-    <script src="Script/index.js"></script>
+<body>
+  <h1>ToDoo - Your list maker</h1>
+  <input type="text" placeholder="Write something to remember...">
+  <button id="add">Add</button>
+  
+  <script src="Script/index.js"></script>
 </body>
 </html>
