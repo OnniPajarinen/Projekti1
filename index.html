@@ -5,12 +5,43 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="pelottava">
 
-<h1>ToDo-lista</h1>
+    <h1>ToDo-lista</h1>
 
+    <table id="data" class="display">
+        <thead>
+          <tr>
+            <th>Asia
 
+            </th>
+            <th>Päivämäärä
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+<div id="sessionData">
+</div>
+    <form id="formi">
+       
+        <br>
+        Asia:
+        <input type="text" name="textfield2" id="asia">
+        <br>
+        Päivämäärä: 
+        <input type="text" name="textfield3" id="paiva">
+        <br>
+        <br>
+        <input type="button" onclick="insertRows()" name="Insert" id="Insert" value="Insert">
+        <input type="button" onclick="deleteRows()" name="Delete" id="Delete" value="Delete">
+        <input type="button" onclick="markDone()" name="Done" id="Done" value="Done">
+        
+    </form>
 
-    <script src="index.js"></script>
+    <script src="Script/index.js"></script>
 </body>
 </html>
