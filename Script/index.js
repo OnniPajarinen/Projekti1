@@ -58,19 +58,19 @@ function addNew() {
 }
 
 function saveToLocalStorage(task) {
-    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    let tasks = JSON.parse(localStorage.getItem("tasks"));
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 function removeFromLocalStorage(task) {
-    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    let tasks = JSON.parse(localStorage.getItem("tasks"));
     tasks = tasks.filter(item => item !== task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 function loadTasks() {
-    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    let tasks = JSON.parse(localStorage.getItem("tasks"));
     tasks.forEach(task => {
         var li = document.createElement("li");
         var okei = document.createTextNode(task);
