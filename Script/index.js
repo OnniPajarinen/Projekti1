@@ -9,7 +9,7 @@ for (let i = 0; i < close.length; i++) {
     };
 }
 
-// Nämä komennot tekevät käyttäjän klikkaamasta kohteesta "Tehdyn" veetämällä viivan yli ja värjäämällä tekstin ja laatikon taustan.
+// Nämä komennot tekevät käyttäjän klikkaamasta kohteesta "Tehdyn" vetämällä viivan yli ja värjäämällä tekstin ja laatikon taustan.
 var list = document.querySelector("ul");
 
 list.addEventListener("click", function (event) {
