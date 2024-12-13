@@ -64,10 +64,11 @@ function addNew() {
 // Tämä funktio siis tallentaa syötteen samaan riviin, muiden syötteiden kanssa mitä käyttäjä on lisännyt. Tottakai pois lukien ne,
 // jotka ovat käyttäjä poistanut, sillä niitä ei muistissa enää.
 function saveToLocalStorage(task) {
-    let tasks = JSON.parse(localStorage.getItem("tasks"));
+    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
 
 // Tämä on funktio, joka nähtiin myös edellisen funktion sisällä.
 // Tämä funktio siis poistaa syötteen, josta käyttäjää painaa sulkemisnappia tai "aluetta" eli tässä tapauksessa "X"-nappia.
